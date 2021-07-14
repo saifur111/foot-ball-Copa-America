@@ -34,7 +34,6 @@ Header Start CSS Here
     width:100%;
     height:638px;
     background: #2D25A0;
-    border: 2px solid yellowgreen;
 
 }
 nav{
@@ -76,7 +75,6 @@ nav .nav-right-side a{
 
 .header-left {
     padding-top: 57px;
-    
 
 }
 .header-left-inner{
@@ -142,6 +140,7 @@ Header Button CSS Here
 }
 .header-right{
     vertical-align: top;
+    position: relative;
 }
 .header-right-image{
     width: 556px;
@@ -156,7 +155,6 @@ Main Part CSS Here
     margin-top: 70px;
     padding-left: 180px;
     padding-right: 180px;
-    border: 2px solid red;
 }
 
 .player{
@@ -205,7 +203,6 @@ Footer Part CSS Here
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 2px solid black;
     
 }
 .footer-images-container{
@@ -232,3 +229,125 @@ Footer Part CSS Here
     font-weight: 500;
     margin-bottom: 20px;
 }
+.left-img{
+    width: 80px;
+    height: 120px;
+    margin-left: 25px;
+    animation: left 1s ease-in-out infinite alternate;
+   
+}
+.right-img{
+    animation: right 1s ease-in-out infinite alternate;
+}
+
+/* Animation CSS */
+/* @keyframes FadeInOut {
+    0% {opacity:1;}
+    25% {opacity:.75;}
+    50% {opacity:.5;}
+    100% {opacity:0;}
+  }
+#fading img {
+    position:absolute;
+    right: 40px;
+}
+    #fading img.top {
+        border-radius: 0px 168px 0px 0;
+        width: 44%;
+        margin-right: -3px;
+        animation: FadeInOut 8s ease-in-out infinite alternate;
+} */
+@keyframes left {
+    0% {margin-top: 10px;}
+    100% {margin-top: 150px;}
+  }
+  @keyframes right {
+    0% {margin-top: -120px;}
+    100% {margin-top: -210px;}
+  }
+
+
+  /* End anam CSS */
+
+  /* ------------------
+Responsive for only Mobile device Part CSS Here 
+---------------------*/
+@media screen and (max-width: 668px) {
+    /* Header Part */
+    #main-nav{
+        display:none;
+    }
+    .container{
+        width: 100%;
+        height: 695px;
+        padding: 30px;
+    }
+    .header-flex {
+    flex-direction: column;
+    padding:0px;
+    }
+    .header-left-inner {
+        width: 100% !important;
+        width: 230px;  
+    }
+    .header-left-heading {
+        font-size: 53px;
+        line-height: 70px;
+    }
+
+    .header-left-button{
+        width: 80%;
+        margin-left: 30px;
+    }
+    .header-right-image.top{
+        display:none;
+    }
+    .header-right{
+        vertical-align: buttom;
+    }
+    .header-right-image.bottom{
+        width: 80%;
+        height: 285px;
+    }
+    /* main Part */
+    .main-container {
+        justify-content: center;
+        margin-top: 30px;
+        padding: 0px 30px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        align-content: center;
+    }
+    .player {
+        width: 75%;
+        height: 474px;
+        margin-right: 0px;
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    /* Footer part Part */
+    .footer-container {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 20px;
+    }
+    .footer-images-container {
+        width: 70%;
+    }
+    .footer-icon-link>i {
+        font-size: 14px;
+        margin: 10px 14px 10px 0px;
+    }
+
+}
+  /* ------------------
+Responsive for only Mobile device Part CSS Here 
+---------------------*/
+
+        /* Do it Later */
+  
+
+/* ------------------
+B-Mark Part CSS Here 
+---------------------*/
