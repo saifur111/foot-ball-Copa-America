@@ -256,6 +256,10 @@ Footer Part CSS Here
  ------------------------*/
 .bottom-container{
     padding: 50px 180px;
+    
+}
+.bg-color{
+    background-color: #007ACC;
 }
 .m-bottom{
     display: flex;
@@ -420,9 +424,11 @@ Responsive for only Mobile device Part CSS Here
     }
     .m-bottom-left-btn{
         margin-left: 120px;
+        margin-bottom:30px;
     }
     .m-bottom-right-image {
-        width: 440px;
+        padding: 6px;
+        width: 423px;
         height: 350px;
     }
     /* Footer up Part Css */
