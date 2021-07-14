@@ -496,4 +496,57 @@ B-Mark Part CSS Here
 .site-review-text:hover{
     transition: .7S ease;
     color: #333030;
+    
 }
+
+
+/* -------------------------------
+Here Photo Gallary Section Start 
+----------------------------------*/
+.photo-gallary-heading{
+    margin: 0px 180px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    color: #575757;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+.gallary-container{
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 300px;
+    padding: 0px 180px;
+    margin-bottom: 40px;
+}
+.gallary-container>div>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  .description {
+    display: none;
+    position: absolute;
+  }
+  .gallary-container>div:hover {
+    transform: scale(1.1);
+  }
+  .gallary-container>div:hover .description {
+    display: block;
+    text-align: center;
+  }
+  
+  .gallary-container>div:hover img {
+    opacity: 0.7;
+  }
+  .gallary-container> div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #20263f;
+  }
