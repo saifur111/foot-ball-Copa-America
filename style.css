@@ -223,6 +223,18 @@ Footer Part CSS Here
         font-size: 20px;
         margin: 20px 14px 20px 1px;
 }
+.footer-icon-link .fa-instagram:hover{
+     color:#E02C6D;
+}
+.footer-icon-link .fa-facebook:hover{
+    color:blue;
+}
+.footer-icon-link .fa-twitter:hover{
+    color:#007ACC;
+}
+.footer-icon-link .fa-youtube:hover{
+    color:red;
+}
 .footer-small-text{
     text-align: center;
     font-size: 16px;
@@ -239,6 +251,9 @@ Footer Part CSS Here
 .right-img{
     animation: right 1s ease-in-out infinite alternate;
 }
+/*-----------------------
+ Here Foooter Up Section Code 
+ ------------------------*/
 .bottom-container{
     padding: 50px 180px;
 }
@@ -267,47 +282,42 @@ Footer Part CSS Here
 }
 .m-bottom-left-btn{
     text-decoration: none;
-    border-radius: 4px;
-    background-color: #5ca1e1;
+    background-image: linear-gradient(to right, #fbc02d 0%, #ea950b 51%, #fbc02d 100%);
+    color: #111111;
     border: none;
-    color: #fff;
+    padding: 15px 35px 13px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
     font-size: 16px;
-    padding: 15px 25px;
-    transition: all 0.5s;
-    box-shadow: 0 10px 20px -8px rgb(0 0 0 / 70%);
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    font-weight: 600;
+    border-radius: 4px;
     text-transform: uppercase;
+    background-size: 200% auto;
+    outline: none;
+    box-shadow: unset;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.m-bottom-left-btn:hover{
+    background-position:right center;
+    transition: all 0.3s ease 0s;
 }
 .m-bottom-right-image{
     width: 530px;
     height: 420px;
 }
 
-
-/* Animation CSS */
-/* @keyframes FadeInOut {
-    0% {opacity:1;}
-    25% {opacity:.75;}
-    50% {opacity:.5;}
-    100% {opacity:0;}
-  }
-#fading img {
-    position:absolute;
-    right: 40px;
-}
-    #fading img.top {
-        border-radius: 0px 168px 0px 0;
-        width: 44%;
-        margin-right: -3px;
-        animation: FadeInOut 8s ease-in-out infinite alternate;
-} */
 @keyframes left {
-    0% {margin-top: 10px;}
-    100% {margin-top: 150px;}
+    0% {margin-top: 20px;}
+    100% {margin-top: 105px;}
   }
-  @keyframes right {
+@keyframes right {
     0% {margin-top: -120px;}
-    100% {margin-top: -210px;}
-  }
+    100% {margin-top: -230px;}
+}
 
 
   /* End anam CSS */
@@ -342,8 +352,22 @@ Responsive for only Mobile device Part CSS Here
         width: 80%;
         margin-left: 30px;
     }
-    .header-right-image.top{
-        display:none;
+    .header-right-image{
+        width: 370px;
+        height: 275px;
+    }
+    .left-img{
+        width: 58px;
+        height: 100px;
+    }
+   
+    /* @keyframes left {
+        0% {margin-top: 100px;}
+        100% {margin-top: 100px;}
+      } */
+    @keyframes right {
+        0% {margin-top: -80px;}
+        100% {margin-top: -145px;}
     }
     .header-right{
         vertical-align: buttom;
@@ -368,6 +392,38 @@ Responsive for only Mobile device Part CSS Here
         margin-right: 0px;
         padding: 15px;
         margin-bottom: 15px;
+    }
+    /* Here Footer Up Section */
+    .bottom-container {
+        padding: 10px;
+    }
+    .m-bottom{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    .m-bottom-left-heading {
+        font-size: 38px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .m-bottom-left-text {
+        font-size: 14px;
+        line-height: 25px;
+        text-align: justify;
+        letter-spacing: 1px;
+        font-weight: 500;
+        width: 95%;
+        margin: 25px 10px;
+    }
+    .m-bottom-left-btn{
+        margin-left: 120px;
+    }
+    .m-bottom-right-image {
+        width: 440px;
+        height: 350px;
     }
     /* Footer part Part */
     .footer-container {
