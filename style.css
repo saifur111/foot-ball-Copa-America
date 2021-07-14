@@ -395,7 +395,7 @@ Responsive for only Mobile device Part CSS Here
     }
     /* Here Footer Up Section */
     .bottom-container {
-        padding: 10px;
+        padding: 30px;
     }
     .m-bottom{
         display: flex;
@@ -425,6 +425,14 @@ Responsive for only Mobile device Part CSS Here
         width: 440px;
         height: 350px;
     }
+    /* Footer up Part Css */
+    .total-container.site-review{
+        margin: 0px 30px;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     /* Footer part Part */
     .footer-container {
         padding-left: 15px;
@@ -450,3 +458,36 @@ Responsive for only Mobile device Part CSS Here
 /* ------------------
 B-Mark Part CSS Here 
 ---------------------*/
+.site-review{
+    display: flex;
+    margin:0px 180px;;
+    border-radius: 1rem;
+
+    box-shadow: -1px 4px 14px #8f8888c7, -1px -2px 14px #8f8888e7;
+}
+.site-review-common{
+    width: 33%;
+}
+.site-review-heading{
+    font-size: 3.5rem;
+    color: #333030;
+    margin: 3rem 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+.site-review-heading:hover{
+    transition: .7S ease;
+    color: #575757;
+}
+.site-review-text{
+    font-size: 1.4rem;
+    font-weight: 100;
+    color: #575757;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+.site-review-text:hover{
+    transition: .7S ease;
+    color: #333030;
+}
