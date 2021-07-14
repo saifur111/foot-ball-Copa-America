@@ -453,6 +453,10 @@ Responsive for only Mobile device Part CSS Here
         margin: 10px 14px 10px 0px;
     }
 
+    .gallary-img{
+       margin-right:50%;
+    }
+
 }
   /* ------------------
 Responsive for only Mobile device Part CSS Here 
